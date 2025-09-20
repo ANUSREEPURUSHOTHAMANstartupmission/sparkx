@@ -1,0 +1,464 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from "../components/Countdown.svelte";
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbar.svelte";
+
+import Tracks from "../components/Tracks.astro";
+import Why from "../components/Why.astro";
+
+
+
+
+---
+
+<Layout  title="LEAP | KERALA STARTUP MISSION">
+
+<Navbarbottom client:load></Navbarbottom>
+
+    
+    <main id="home" class="hidden bg-[#f1f5f4] bg-smoke pt-24 lg:pt-10 px-5 lg:px-20 pb-20 lg:pb-10 bg-kif min-h-screen w-screen flex flex-col items-center justify-center ">
+		<div class="flex items-center flex-col lg:flex-row justify-center w-full gap-6  container lg:pt-20">
+			<div class="space-y-8 lg:w-1/2 w-full">
+				<div class="pointer-events-none">
+				
+					<!-- <div>
+						<h1 class="md:text-sm text-xs"  data-aos-delay="500">India's Largest Innovation Festival</h1>
+					</div> -->
+				</div>
+
+				<div class="pointer-events-none">
+                    <h1 class="text-black lg:text-left text-3xl md:text-[40px] font-heading">
+                       KERA
+                    </h1>
+                    <div>
+                        <h1 class="md:text-lg text-base font-heading">Kerala Entrepreneurship & Renewable Agriculture (KERA) Project
+                        </h1>
+                    </div>
+                </div>
+               
+                <div>
+                    <h1 class="text-lg">
+                    To make Kerala a model for sustainable, tech-enabled agriculture and rural entrepreneurship, where farmers, women, and youth benefit from innovation, markets, and inclusive economic growth.
+                </div>
+                
+                <!-- <div>
+                    <div class="">
+                        <a href="https://zfrmz.com/Fk3gVCLfDNnFQgD14qhy" target="_blank" class="inline-block font-sans rounded-md bg-[#e5243b] w-fit py-2 md:text-base px-3 text-white text-sm">Apply for M.I.N.D
+                        </a>
+                    </div>
+                </div>
+               -->
+				<!-- <h1 class="text-kif-dark-blue text-xl font-semibold text-center lg:text-left"  >
+					Shaping a Sustainable <span class="text-kif-green">2035</span>
+				</h1> -->
+				
+			</div>
+            <div class="">
+				<img src="/delete/bg.svg" data-aos="zoom-in-down" class="w-[70vw] md:w-[45vw] lg:w-[30vw] pointer-events-none" />
+			</div>
+			
+		</div>
+     
+	</main>
+   
+    <div class="relative min-h-screen flex items-center justify-start px-10 text-white static-hero">
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#143425] via-[#03502be7] to-[#02603378] z-10"></div>
+            <img src="/img/hero1.jpg" alt="Background" class="w-full h-full object-cover bg-top bg-right opacity-60" />
+        </div>
+        <div class="container  w-full h-full flex my-auto mx-auto">
+            <div class=" w-full">
+                <div class="flex  flex-col align-items-center w-full h-full items-center justify-center ">
+                    <div class=" mx-auto text-center w-full flex flex-col items-center justify-center fadeInUp" data--delay="0.0s">
+                        <div class="w-full">
+                            <h1 class="text-4xl md:text-7xl font-semibold text-white  pb-6 md:pt-20">
+                                Kerala Entrepreneurship &<br> Renewable Agriculture
+                            </h1>
+                        </div>
+                        <div data-swiper-parallax="400" class=" pb-0 mb-0">
+                            <h2 class=" mb-0 text-4xl font-bold uppercase text-[#cbaf0f]">KERA Project</h2>
+                        </div>
+                        
+                        <div class=" w-full flex flex-col items-center justify-center">
+                            <p class="text-gray-300 md:text-xl text-base pt-8  md:max-w-5xl max-w-7xl">
+                                To make Kerala a model for sustainable, tech-enabled agriculture and rural entrepreneurship, where farmers, women, and youth benefit from innovation, markets, and inclusive economic growth.
+                            </p>
+                            <p class="md:pt-10 pt-4 text-white  text-xl font-bold">Empowering Farmers | Enabling Startups | Strengthening Rural Economies</p>
+                        </div>
+                         <div class="hero-bottom mt-12 ">
+                            <a href="#About" class="page-scroll vs-btn text-white">Discover More</a>
+                          </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+ <div class="service-layout1 hidden">
+        <div class="container w-full items-center justify-center flex flex-col ">
+            <div class=" grid md:grid-cols-3 md:w-3/4 w-full gap-6">
+                
+                <div class="group">
+                    <div class="service-style1">
+                        <div class="service-img2"><img src="/img/h1.png" alt="service thumbnail"></div>
+                        <div class="service-img"><img src="/img/h1.png" alt="service thumbnail"></div>
+                        <div class="service-inner flex flex-col items-center justify-center">
+                            <div class="service-icon flex flex-col items-center justify-center"><img src="assets/img/icon/service-icon-1-1.png" alt="icon"></div>
+                            <h3 class=" text-xl font-semibold group-hover:text-white"><a>For Startups</a></h3>
+                            <p class="text-base p-1 pt-3  group-hover:text-white"> Are you building a tech-driven agri solution?</p>
+                        </div>
+                        <div class="link-btn">
+                            <a href="#">Apply for Startup Support<i class="far fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="service-style1">
+                        <div class="service-img2"><img src="/img/h4.png" alt="service thumbnail"></div>
+                        <div class="service-img"><img src="/img/h4.png" alt="service thumbnail"></div>
+                        <div class="service-inner flex flex-col items-center justify-center">
+                            <div class="service-icon flex flex-col items-center justify-center"><img src="/img/i1.png" alt="icon"></div>
+                            <h3 class=" text-xl font-semibold group-hover:text-white"><a>For Farmers & FPOs</a></h3>
+                            <p class="text-base p-1 pt-3  group-hover:text-white"> Want to improve your productivity or market access?</p>
+                        </div>
+                        <div class="link-btn">
+                            <a href="#">Join KERA Collectives<i class="far fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="service-style1">
+                        <div class="service-img2"><img src="/img/h3.png" alt="service thumbnail"></div>
+                        <div class="service-img"><img src="/img/h3.png" alt="service thumbnail"></div>
+                        <div class="service-inner flex flex-col items-center justify-center">
+                            <div class="service-icon flex flex-col items-center justify-center"><img src="/img/i3.png" alt="icon"></div>
+                            <h3 class=" text-xl font-semibold group-hover:text-white"><a>For Partners & Institutions</a></h3>
+                            <p class="text-base p-1 pt-3  group-hover:text-white"> Interested in collaboration, funding, or research?</p>
+                        </div>
+                        <div class="link-btn">
+                            <a href="#" class="hover:text-[#f5ec46]"> Partner With Us<i class="far fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="selling-layout1  space-bottom pt-24" id="About">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-8">
+                    <div class="selling-style1 pt-10">
+                        <div class="title-area wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                            <!-- <span class="sec-subtitle">Welcome to Farmix</span> -->
+                            <h2 class="sec-title">KERA</h2>
+                        </div>
+                        <div>
+                            <p class="text-lg text-black">The KERA Project is a flagship initiative by the Government of Kerala in collaboration with the World Bank, focused on transforming agriculture and rural livelihoods. It aims to create a vibrant, technology-driven ecosystem where farmers, startups, and agri-entrepreneurs thrive together.</p>
+                            <p class="py-4 text-lg text-black">At its heart, KERA promotes innovation, entrepreneurship, sustainability, and community development—bringing cutting-edge solutions to the grassroots.</p>
+                        </div>
+                        <div class="row g-3 vs-carousel" data-arrows="false" data-dots="true" data-autoplay="true" data-slide-show="2">
+                            <div class="col-auto">
+                                <a><img src="/img/1a.png" alt="Image" class="rounded-xl"></a>
+                            </div>
+                            <div class="col-auto">
+                                <a><img src="/img/2a.png" alt="Image" class="rounded-xl"></a>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class=" flex w-full h-full item-end pt-10">
+                        <img src="/img/about.svg" alt="selling-img">
+                        <!-- <div class="img1">
+                            <img src="assets/img/service/selling-img-1-2.png" alt="selling-img">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape-mockup moving z-index d-none d-xxl-block" style="right: 0%; bottom: 22%;"><img src="/img/selling-shep-1.png" alt="shapes"></div>
+    </section>
+    <!--==============================
+    Process Area
+    ============================== -->
+    <section class="process-layout1 pb-24" id="Objectives">
+        <div class="container">
+            <div class="title-area text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                
+                <h2 class="sec-title">Objectives</h2>
+            </div>
+            <div class="grid md:grid-cols-5 grid-cols-1 gap-6" >
+                <div class="">
+                    <div class="process-style1">
+                        <div class="process-img">
+                            <img src="/img/1o.png" alt="process-image">
+                        </div>
+                        <div class="process-content">
+                            <p class=" text-black font-semibold text-base">Modernize Kerala’s agricultural practices</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="process-style1">
+                        <div class="process-img">
+                            <img src="/img/2o.png" alt="process-image">
+                        </div>
+                        <div class="process-content">
+                            <p class=" text-black font-semibold text-base">Promote farmer-producer collectives and cooperatives.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="process-style1">
+                        <div class="process-img">
+                            <img src="/img/3o.png" alt="process-image">
+                        </div>
+                        <div class="process-content">
+                            <p class=" text-black font-semibold text-base">Support startups in solving real-world agri challenges.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="process-style1">
+                        <div class="process-img">
+                            <img src="/img/4o.png" alt="process-image">
+                        </div>
+                        <div class="process-content">
+                            <p class=" text-black font-semibold text-base">Improve productivity, sustainability, and market access.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="process-style1">
+                        <div class="process-img">
+                            <img src="/img/51o.png" alt="process-image">
+                        </div>
+                        <div class="process-content">
+                            <p class=" text-black font-semibold text-base">Enable women and youth to lead agri-entrepreneurship.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="shape-mockup moving z-index d-none d-xl-block" style="left: 0%; top: 5%;"><img src="assets/img/shep/process-shep-1.png" alt="shapes"></div> -->
+    </section>
+    <!--==============================
+
+
+     Service Area
+    ============================== -->
+    
+    <section class="service-section pb-24 container">
+            <div class="title-area text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                
+                <h2 class="sec-title font-bold">Key Components of KERA</h2>
+            </div>
+            <Tracks></Tracks>  
+    </section>
+
+     <section class=" px-5 container mx-auto pb-24">
+            <div class=" md:flex-row flex flex-col ">
+                <div class="md:w-1/2 w-full my-auto">
+                    <div class=" pb-10">
+                        <div class="row">
+                            <div class="">
+                                <div class="title-area wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                                    <h2 class="sec-title">Why KERA Stands Out</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div>
+                            
+                            <div class="flex flex-col gap-5 mb-10">
+                                <Why title="Grassroots-Centered Design" />
+                                <Why title="Startup–Farmer Collaboration" />
+                                <Why title="Climate-Smart & Inclusive"  />
+                                <Why title="Backed by International Partnerships"/>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 w-full"  data-aos="fade-down" data-aos-duration="1500" data-aos-offset="300">
+                    <img src="/img/kera11.svg" class="">
+                </div>
+            </div>
+        </section>
+   
+
+    <section class="blog-layout1 space-bottom" id="Get_Involved">
+        <div class="container">
+            <div class="title-area text-center wow fadeInUp wow-animated" data-wow-delay="0.3s">
+                
+                <!-- <span class="sec-subtitle">Blog & News</span> -->
+                <h2 class="sec-title">Get Involved</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="vs-blog blog-single">
+                        <div class="blog-img">
+                            <a><img src="/img/g3.svg" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="https://zfrmz.com/wrW5JcGcYvcwIvhKWn5b" target="_blank"><i class="fal fa-tag"></i>For Startups</a>
+                            </div>
+                            <h2 class="blog-title"><a> Are you building a tech-driven agri solution?</a></h2>
+                            <a  href="https://zfrmz.com/wrW5JcGcYvcwIvhKWn5b" target="_blank" class="blog-inner-author">
+                                <img src="/img/s1.png" alt="blog author">
+                                <div class="text text-white">
+                                   Apply for Startup Support
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="vs-blog blog-single">
+                        <div class="blog-img">
+                            <a><img src="/img/g2.svg" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="https://zfrmz.com/FE1Cicm0R2PJoq1iB8aY" target="_blank"><i class="fal fa-tag"></i>For Farmers & FPOs</a>
+                            </div>
+                            <h3 class="blog-title"><a> Want to improve your productivity or market access?</a></h3>
+                            <a  href="https://zfrmz.com/FE1Cicm0R2PJoq1iB8aY" target="_blank" class="blog-inner-author">
+                                <img src="/img/s1.png" alt="blog author">
+                                <div class="text text-white">
+                                    Join KERA Collectives
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="vs-blog blog-single">
+                        <div class="blog-img">
+                            <a><img src="/img/g1.svg" alt="Blog Image"></a>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="https://zfrmz.com/ELjvzib7qHB9nj6W4Om5" target="_blank"><i class="fal fa-tag"></i>For Partners & Institutions</a>
+                            </div>
+                            <h3 class="blog-title"><a> Interested in collaboration, funding, or research?</a></h3>
+                            <a  href="https://zfrmz.com/ELjvzib7qHB9nj6W4Om5" target="_blank" class="blog-inner-author">
+                                <img src="/img/s1.png" alt="blog author">
+                                <div class="text text-white">
+                                  Partner With Us
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="brand-layout1 space-bottom">
+        <div class="container">
+            <div class="row  z-index-common">
+                    <div class="col-md-3">
+                        <div class="bran-img">
+                            <img src="assets/img/brand/brand-1.png" alt="brand">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="bran-img">
+                            <img src="assets/img/brand/brand-2.png" alt="brand">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="bran-img">
+                            <img src="assets/img/brand/brand-3.png" alt="brand">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="bran-img">
+                            <img src="assets/img/brand/brand-4.png" alt="brand">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+
+    <!--==============================
+			Footer Area
+	==============================-->
+    <footer class="bg-green-900 pb-4">
+      
+     
+        <div class="copyright-wrap">
+            <div class="container">
+                <div class="row justify-content-xl-between justify-content-center align-items-center">
+                    <div class="col-auto">
+                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2025 <a><a href="https://startupmission.kerala.gov.in/">Kerala Startup Mission</a></p>
+                    </div>
+                    <div class="col-auto">
+                    <div class="footer-social">
+                            <a href="https://www.facebook.com/keralastartupmission" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/startup_mission" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/keralastartupmission/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>  
+    <!-- Scroll To Top -->
+    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+    <!--==============================
+        All Js File
+    ============================== -->
+
+</Layout>
+<script is:inline>
+  document.querySelectorAll("a.page-scroll").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const href = anchor.getAttribute("href");
+      const targetId = href.replace(/^\/?#/, "");
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        e.preventDefault();
+
+        targetElement.scrollIntoView({ behavior: "smooth" });
+
+        history.replaceState(null, null, window.location.pathname);
+      }
+    });
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetId = hash.replace("#", "");
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        setTimeout(() => {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+          history.replaceState(null, null, window.location.pathname);
+        }, 100);
+      }
+    }
+  });
+</script>

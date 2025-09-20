@@ -1,0 +1,347 @@
+
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from "../components/Countdown.svelte";
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbar.svelte";
+
+import Speakers from "../components/Speakers.svelte";
+import Startups from "../components/Startups.svelte";
+
+---
+
+<Layout  title="LEAP | KERALA STARTUP MISSION">
+
+<Navbarbottom client:load></Navbarbottom>
+
+
+
+
+   
+     
+    
+    <!-- Banner Area -->    
+    <section class="banner_area">
+    	<div class="container bdr">
+    		<div class="row">
+    			<div class="col-lg-6">
+    				<h2 class="wow fadeInUp">SparkX<br>Incubation Program</h2>
+					<p class="wow fadeInUp" data-wow-delay="0.3s"> An exclusive 3-month incubation program for KSUM Idea Grant Winners.</p>
+					
+					
+					<a  href="#about"  class="page-scroll theme_btn wow fadeInUp" data-wow-delay="0.7s">Discover More</a>
+    			</div>
+    			<div class="col-lg-6 banner_i">
+    				<img src="img/rs-banner-3.png" alt="" class="rs_banner">
+    				<img src="images/banner-i-2.png" alt="" class="images_1">
+    				<img src="images/banner-i-1.png" alt="" class="images_2 wow slideInRight">
+    			</div>
+    		</div>
+			<div class="grid md:grid-cols-3 text-center pt-14 grid-cols-1">
+				<div class="">
+					<p class=" font-bold text-[#163181]"><span>Duration</span> : <span>3 Months</span></p>
+				</div>
+				<div>
+					<p class="font-bold text-[#163181]"><span>Kick-off</span> : <span>September 15th</span></p>
+				</div>
+				<div>
+					<p class="font-bold text-[#163181]"><span>Format</span> : <span>Hybrid (Online & Offline Sessions)</span></p>
+				</div>
+			</div>
+    	</div>
+    </section>
+    <!-- Banner Area --> 
+	
+   
+       <!-- Digital Cloud agency --> 
+    <section class="cloud_agency_area pt-24" id="about">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-6 containt_inner">
+    				<h5>About the Program</h5>
+    				<h2>Transform Your Idea into a Viable Business in 3 Months</h2>
+    				<p>
+						 SparkX is a personalized 3-month incubation program designed exclusively for KSUM's Idea Grant winners. Our mission is to provide you with the foundational knowledge, strategic guidance, and expert network needed to move from a validated idea to a market-ready prototype. Through a series of targeted masterclasses and one-on-one mentorship, SparkX will equip you with the essential skills to navigate the critical early stages of your entrepreneurial journey.
+					</p>
+    				<!-- <a  class="theme_btn">Get in touch</a> -->
+    			</div>
+    			<div class="col-lg-6 text-lg-right"><img src="/img/1.png" alt=""></div>
+    		</div>
+    	</div>
+    </section>
+    <!-- Digital Cloud agency -->  
+    <!--A platform that facilitates -->  
+    <section class="platform_facilitates">
+    	<div class="container">
+    		<h2>What You Will Gain</h2>
+    		
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 platform_row ">
+				<!-- Card 1 -->
+				<div class="platform flex flex-col h-full p-6  rounded-xl shadow-md">
+					<div class="icons mb-4 text-4xl text-green-600">
+					<i class="flaticon-support"></i>
+					</div>
+					<a class="font-semibold text-lg mb-2">6 Expert Masterclasses</a>
+					<p class="text-gray-600">
+					Dive deep into critical topics including idea validation, IP protection, legal compliance, MVP development, fundraising, and pitching.
+					</p>
+					
+				</div>
+
+				<!-- Card 2 -->
+				<div class="platform flex flex-col h-full p-6 pb-2 rounded-xl shadow-md">
+					<div class="icons mb-4 text-4xl text-blue-600">
+					<i class="flaticon-learning"></i>
+					</div>
+					<a class="font-semibold text-lg mb-2">One-on-One Mentoring</a>
+					<p class="text-gray-600">
+					Receive dedicated, personalized mentoring sessions with industry experts matched to your specific needs and challenges.
+					</p>
+					
+				</div>
+
+				<!-- Card 3 -->
+				<div class="platform flex flex-col h-full p-6 pb-2 rounded-xl shadow-md">
+					<div class="icons mb-4 text-4xl text-yellow-600">
+					  <i class="flaticon-collaboration"></i>
+					</div>
+					<a class="font-semibold text-lg mb-2">Elite Networking Opportunities</a>
+					<p class="text-gray-600">
+					Connect with successful founders, seasoned investors, and the wider KSUM ecosystem at our exclusive offline events.
+					</p>
+					
+				</div>
+
+				<!-- Card 4 -->
+				<div class="platform flex flex-col h-full p-6 pb-2 rounded-xl shadow-md">
+					<div class="icons mb-4 text-4xl text-purple-600">
+					    <i class="flaticon-security"></i>
+					</div>
+					<a class="font-semibold text-lg mb-2">Pitch-Ready by Demo Day</a>
+					<p class="text-gray-600">
+					Graduate from the program with a polished pitch and a clear roadmap, ready to showcase your venture at Huddle Global.
+					</p>
+					
+				</div>
+			</div>
+
+    	</div>
+    </section>
+    <!--A platform that facilitates -->    
+    
+
+
+	  <!-- See our blog  -->
+    <section class=" flex flex-col items-center justify-center text-center startupdata pt-14" id="Startups">
+    	<div class="container flex flex-col items-center justify-center text-center">
+    		<div class="tittle">
+    			<h2>Meet Our Participating Startups</h2>
+				<div class=" max-w-4xl">
+					We are proud to host a diverse cohort of innovators who are poised to make a significant impact in their respective fields.
+				</div>
+    		</div>
+			<div class="grid md:grid-cols-4 lg:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-4 pt-14">
+				<div class="border border-gray-400 w-full">
+					<img src="/startups/ksum.png" class=" p-4 w-4/5 items-center justify-center text-center flex mx-auto ">
+				</div>
+			</div>
+			<div>
+				<Startups client:load></Startups>
+			</div>
+    	</div>
+    </section>
+    <!-- See our blog  -->
+    
+    
+
+	<div class="container mx-auto p-8 pt-24 my-auto">
+	<div class="grid lg:grid-cols-2 grid-cols-1 gap-6 items-stretch">
+		<!-- Left Section -->
+		<div class="space-y-6 h-full flex flex-col justify-between">
+		<!-- Item -->
+		<div class="flex items-center gap-4 bg-orange-100 rounded-2xl p-4">
+			<div>
+			<h3 class="font-semibold text-white px-2 py-1 mb-2 rounded-xl w-fit bg-orange-500">Session 1</h3>
+			<p class="text-gray-600 text-base">
+				Validating Ideas and Building Early Prototypes
+			</p>
+			</div>
+		</div>
+
+		<!-- Item -->
+		<div class="flex items-center gap-4 bg-blue-100 rounded-2xl p-4">
+			<div>
+			<h3 class="font-semibold text-white px-2 py-1 mb-2 rounded-xl w-fit bg-blue-500">Session 2</h3>
+			<p class="text-gray-600 text-base">
+				Protect to Scale: Startup IP Fundamentals
+			</p>
+			</div>
+		</div>
+
+		<!-- Item -->
+		<div class="flex items-center gap-4 bg-green-100 rounded-2xl p-4">
+			<div>
+			<h3 class="font-semibold text-white px-2 py-1 mb-2 rounded-xl w-fit bg-green-500">Session 3</h3>
+			<p class="text-gray-600 text-base">
+				Beyond Ideas: Legal & Compliance Essentials for Startups
+			</p>
+			</div>
+		</div>
+
+		<!-- Item -->
+		<div class="flex items-center gap-4 bg-yellow-100 rounded-2xl p-4">
+			<div>
+			<h3 class="font-semibold text-white px-2 py-1 mb-2 rounded-xl w-fit bg-yellow-500">Session 4</h3>
+			<p class="text-gray-600 text-base">
+				Build Smart: MVP & Prototyping Essentials
+			</p>
+			</div>
+		</div>
+
+		<!-- Item -->
+		<div class="flex items-center gap-4 bg-purple-100 rounded-2xl p-4">
+			<div>
+			<h3 class="font-semibold text-white px-2 py-1 mb-2 rounded-xl w-fit bg-purple-500">Session 5</h3>
+			<p class="text-gray-600 text-base">
+				Smart Money: Navigating Grants, Funding & Finance
+			</p>
+			</div>
+		</div>
+
+		<!-- Item (Mobile Only) -->
+		<div class="items-center gap-4 bg-orange-100 rounded-2xl p-4 lg:hidden flex">
+			<div>
+			<h3 class="font-semibold text-white px-2 py-1 mb-2 rounded-xl w-fit bg-orange-500">Session 6</h3>
+			<p class="text-gray-600 text-base">
+				The Pitch Masterclass: Storytelling with Numbers
+			</p>
+			</div>
+		</div>
+		</div>
+
+		<!-- Right Section -->
+		<div class="h-full flex flex-col justify-between" id="Sessions">
+		<div class="w-11/12 pt-8 px-8 flex-1 flex flex-col">
+			<div class="startupdata1 mb-6">
+			<h2 class="text-start">Sessions at a Glance</h2>
+			</div>
+
+			<!-- Illustration -->
+			<div class="flex-1 flex items-center justify-center">
+			<img src="/img/timeline.png" class="md:w-3/4 w-full mx-auto">
+			</div>
+		</div>
+
+		<!-- Session 6 (Desktop Only) -->
+		<div class="flex items-center gap-4 bg-orange-100 rounded-2xl p-4 lg:flex hidden mt-6">
+			<div class="flex flex-col">
+			<h3 class="font-semibold text-white px-2 py-1 mb-2 rounded-xl w-fit bg-orange-500">Session 6</h3>
+			<p class="text-gray-600 text-base">
+				The Pitch Masterclass: Storytelling with Numbers
+			</p>
+			</div>
+		</div>
+		</div>
+	</div>
+	</div>
+
+
+      <section class="faq_area fa_2 pt-24 pb-10">
+        <div class="container">
+            <h2 class="pb-10">Meet Your Mentors & Speakers</h2> 
+			<div>
+				<Speakers client:load></Speakers>
+			</div>
+        </div>
+    </section>
+
+
+	<section class="faq_area fa_2 pt-24 pb-10">
+        <div class="container">
+            <h2 class="pb-10">Frequently Asked Questions</h2> 
+			<div class="accordion frequently">
+				<div class="faq"> 
+					<a href="#" data-toggle="collapse" data-target="#faq_1">Who is eligible for the SparkX program?</a> 
+					<div id="faq_1" class="collapse show" data-parent=".frequently">
+						<p>
+							SparkX is an exclusive, invitation-only program for the winners of the KSUM Idea Grant.
+						</p>
+					</div>
+				</div>
+				<div class="faq">  
+					<a href="#" class="collapsed" data-toggle="collapse" data-target="#faq_2">Is there a fee to participate in the program?</a>
+					<div id="faq_2" class="collapse" data-parent=".frequently">
+						<p>
+							No, the SparkX program is completely free for all selected Idea Grant winners.
+						</p>
+					</div>
+				</div> 
+				<div class="faq">  
+					<a href="#" class="collapsed" data-toggle="collapse" data-target="#faq_3">Are the sessions online or offline?</a>
+					<div id="faq_3" class="collapse" data-parent=".frequently">
+						<p>
+							The program is hybrid. The Kick-off event (Sept 15th) and the final Demo Day will be held offline to maximize networking opportunities. All other masterclasses will be conducted online.
+						</p>
+					</div>
+				</div> 
+			</div>
+        </div>
+    </section>
+     
+   <!-- Footer Area -->  
+    <footer class="footer_area">   
+       <div class="container"> 
+			 
+			<div class="copy_right">
+				<div class="row"> 
+					<div class="col-md-6  wow slideInRight">
+						<div class="flex items-end justify-end">
+							<img src="/img/logosparkx.svg" class="w-48 md:w-52">
+						</div>
+					</div>   
+					<div class="col-md-6 order-md-first  wow slideInLeft my-auto">
+						<p>Copyrights 2025 <a href="https://startupmission.kerala.gov.in/" target="_blank">Kerala Startup Mission</a></p>
+					</div> 
+				</div>
+			</div> 
+       </div> 
+    </footer>
+    <!-- End Footer Area --> 
+    
+    <!-- Scroll Top Button -->
+    <button class="scroll-top">
+        <i class="fas fa-angle-up"></i>
+    </button>
+
+   </Layout>
+<script is:inline>
+  document.querySelectorAll("a.page-scroll").forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const href = anchor.getAttribute("href");
+      const targetId = href.replace(/^\/?#/, "");
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        e.preventDefault();
+
+        targetElement.scrollIntoView({ behavior: "smooth" });
+
+        history.replaceState(null, null, window.location.pathname);
+      }
+    });
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetId = hash.replace("#", "");
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        setTimeout(() => {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+          history.replaceState(null, null, window.location.pathname);
+        }, 100);
+      }
+    }
+  });
+</script>
