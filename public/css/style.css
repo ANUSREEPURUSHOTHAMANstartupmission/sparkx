@@ -3720,7 +3720,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
 }
 
 /*----------------------------------------------------*/
-@media (max-width: 1600px) {
+/* @media (max-width: 1600px) {
   .main_header_area {
     padding-left: 50px;
     padding-right: 50px;
@@ -3739,7 +3739,7 @@ body a:focus, body a:hover, body .btn:focus, body .btn:hover, body button:focus,
     display: inline-block;
     margin: 0 15px;
   }
-}
+} */
 @media (max-width: 1440px) {
   .banner_area .banner_i img {
     display: none;
