@@ -42,8 +42,8 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
       {#each speakers as { name, designation, organisation, photo, linkedin }}
-        <div class="relative group rounded-lg overflow-hidden flex flex-col  h-full  transition-all duration-300 ">
-          <img src={getImage(photo)} alt={name} class="w-full object-cover p-8 rounded-full" loading="lazy" />
+        <div class="relative group rounded-lg overflow-hidden flex flex-col  h-full   transition-all duration-300 ">
+          <img src={getImage(photo)} alt={name} class="w-full object-cover p-8 rounded-full " loading="lazy" />
 
           <div class="text-black text-center py-2 px-2 font-semibold h-full flex-1 bg-white">
             <h3 class="text-base">{name}</h3>
