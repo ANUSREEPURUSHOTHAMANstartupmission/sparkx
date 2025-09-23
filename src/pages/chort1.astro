@@ -1,0 +1,32 @@
+
+---
+import Layout from '../layouts/Layout.astro';
+import Countdown from "../components/Countdown.svelte";
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbar.svelte";
+
+import Speakers from "../components/Speakers.svelte";
+import Startups from "../components/Startups.svelte";
+
+---
+
+<Layout  title="LEAP | KERALA STARTUP MISSION">
+
+<Navbarbottom client:load></Navbarbottom>
+
+  <section class=" flex flex-col items-center justify-center text-center startupdata pt-36" id="Startups">
+    	<div class="container flex flex-col items-center justify-center text-center">
+    		<div class="tittle">
+    			<h2>Meet Our Participating Startups <br><span class="text-blue-900">Cohort 1</span></h2>
+				<div class=" max-w-4xl">
+					We are proud to host a diverse cohort of innovators who are poised to make a significant impact in their respective fields.
+				</div>
+    		</div>
+			
+			<div class="pt-14">
+				<Startups client:load></Startups>
+			</div>
+    	</div>
+    </section>
+
+</Layout>

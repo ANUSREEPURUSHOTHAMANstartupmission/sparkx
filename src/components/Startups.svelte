@@ -337,7 +337,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "" }
+                   attributes: { url: "/img/startups/44.png" }
                  }
                }
              }

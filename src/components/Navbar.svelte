@@ -86,11 +86,11 @@
         <div style="font-family: Museo-Sans, sans-serif;" class="flex my-auto  {scrolled?'':''}">
             <a href="/"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Home</a>
             <a href="/#about"  class="md:flex page-scroll cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">About</a>
-            <a href="/#Startups"  class="md:flex page-scroll cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Startups</a>
             
             <a href="/#Sessions" class="md:flex page-scroll hidden cursor-pointer  px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Sessions</a>
             <a href="/#Speakers"  class="md:flex page-scroll cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">Speakers</a>
-           
+            <a href="/chort1"  class="md:flex page-scroll cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm hover:text-green-900">Chort 1</a>
+
         </div>
       
         <div class="flex  items-center justify-center  bg-white my-auto spl_cursor md:hidden flex ">   
@@ -135,15 +135,16 @@
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
                       <a href="/#about"  class="page-scroll cursor-pointer   font-bold ">About</a>
                     </li>
-                    <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/#Startups"  class="page-scroll cursor-pointer  font-bold ">Startups</a>
-                    </li> 
+                  
                      <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
                       <a href="/#Sessions"  class="page-scroll cursor-pointer  font-bold ">Sessions</a>
                     </li>
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
                       <a href="/#Speakers"  class="page-scroll  cursor-pointer  font-bold ">Speakers</a>
                     </li>
+                      <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
+                      <a href="/chort1"  class="page-scroll cursor-pointer  font-bold ">Chort 1</a>
+                    </li> 
                     
             </ul>
         </nav>
