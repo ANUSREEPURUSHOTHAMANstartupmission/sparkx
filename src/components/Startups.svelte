@@ -5,7 +5,7 @@
      id: 1,
      attributes: {
        Type: "Healthcare",
-       Startups: {
+       startups: {
          data: [
            {
              id: 1,
@@ -131,7 +131,7 @@
      id: 2,
      attributes: {
        Type: "IT/ITeS",
-       Startups: {
+       startups: {
          data: [
            {
              id: 10,
@@ -140,7 +140,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/10s.png" }
+                   attributes: { url: "/img/startups/10s.png" }
                  }
                }
              }
@@ -152,7 +152,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/11s.png" }
+                   attributes: { url: "/img/startups/11s.png" }
                  }
                }
              }
@@ -164,7 +164,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/12s.png" }
+                   attributes: { url: "/img/startups/12s.png" }
                  }
                }
              }
@@ -176,7 +176,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/40s.png" }
+                   attributes: { url: "/img/startups/40s.png" }
                  }
                }
              }
@@ -189,7 +189,7 @@
      id: 3,
      attributes: {
        Type: "Agriculture & Lifesciences",
-       Startups: {
+       startups: {
          data: [
            {
              id: 13,
@@ -198,7 +198,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/13s.png" }
+                   attributes: { url: "/img/startups/13s.png" }
                  }
                }
              }
@@ -210,7 +210,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/14s.png" }
+                   attributes: { url: "/img/startups/14s.png" }
                  }
                }
              }
@@ -222,7 +222,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/15s.png" }
+                   attributes: { url: "/img/startups/15s.png" }
                  }
                }
              }
@@ -236,7 +236,7 @@
      id: 4,
      attributes: {
        Type: "AVGC",
-       Startups: {
+       startups: {
          data: [
            {
              id: 16,
@@ -245,7 +245,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/16s.png" }
+                   attributes: { url: "/img/startups/16s.png" }
                  }
                }
              }
@@ -257,7 +257,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/17s.png" }
+                   attributes: { url: "/img/startups/17s.png" }
                  }
                }
              }
@@ -270,7 +270,7 @@
      id: 5,
      attributes: {
        Type: "Education",
-       Startups: {
+       startups: {
          data: [
            {
              id: 18,
@@ -279,7 +279,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/18s.png" }
+                   attributes: { url: "/img/startups/18s.png" }
                  }
                }
              }
@@ -291,7 +291,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/19s.png" }
+                   attributes: { url: "/img/startups/19s.png" }
                  }
                }
              }
@@ -303,7 +303,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/20s.png" }
+                   attributes: { url: "/img/startups/20s.png" }
                  }
                }
              }
@@ -316,7 +316,7 @@
      id: 6,
      attributes: {
        Type: "Consumer/emerging sectors",
-       Startups: {
+       startups: {
          data: [
            {
              id: 41,
@@ -325,7 +325,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/41s.png" }
+                   attributes: { url: "/img/startups/41s.png" }
                  }
                }
              }
@@ -337,7 +337,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/42s.png" }
+                   attributes: { url: "/img/startups/42s.png" }
                  }
                }
              }
@@ -362,7 +362,7 @@
      id: 7,
      attributes: {
        Type: "Electronics & Communication",
-       Startups: {
+       startups: {
          data: [
            {
              id: 24,
@@ -371,7 +371,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/24s.png" }
+                   attributes: { url: "/img/startups/24s.png" }
                  }
                }
              }
@@ -383,7 +383,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/Startups/25s.png" }
+                   attributes: { url: "/img/startups/25s.png" }
                  }
                }
              }
@@ -394,13 +394,13 @@
    }
  ];
 
-  // sort by Startupship type order if you have `attributes.order`
+  // sort by startupship type order if you have `attributes.order`
   data.sort((a, b) => (a.attributes.order || 0) - (b.attributes.order || 0));
 
   // sort each Startup by order
   data.forEach(item => {
-    if (item.attributes.Startups?.data?.length > 0) {
-      item.attributes.Startups.data.sort(
+    if (item.attributes.startups?.data?.length > 0) {
+      item.attributes.startups.data.sort(
         (a, b) => (a.attributes.order || 0) - (b.attributes.order || 0)
       );
     }
@@ -410,12 +410,12 @@
 <div class="px-8 items-center justify-center text-center mx-auto">
   <div class="flex flex-wrap justify-center items-center gap-8">
     {#each data as item (item.id)}
-      {#if item.attributes.Startups && item.attributes.Startups.data.length > 0}
+      {#if item.attributes.startups && item.attributes.startups.data.length > 0}
         <div
           class={"flex flex-col flex-wrap text-center items-center justify-center  " +
-            ((item.attributes.Startups.data.length > 7)
+            ((item.attributes.startups.data.length > 7)
               ? "md:col-span-7"
-              : "md:col-span-" + item.attributes.Startups.data.length)}
+              : "md:col-span-" + item.attributes.startups.data.length)}
         >
           <div class="text-center pb-3 pt-2">
             {#if item.attributes.Type}
@@ -425,7 +425,7 @@
             {/if}
           </div>
           <div class="flex flex-wrap flex-row gap-2 items-center justify-center">
-            {#each item.attributes.Startups.data as Startup (Startup.id)}
+            {#each item.attributes.startups.data as Startup (Startup.id)}
                 <a class="rounded-md w-32 md:w-40 md:h-24 bg-white border">
                   <img
                     src={Startup.attributes.Image.data.attributes.url}
