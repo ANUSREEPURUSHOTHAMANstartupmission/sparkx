@@ -176,7 +176,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/startups/40s.png" }
+                   attributes: { url: "/img/startups/41s.png" }
                  }
                }
              }
@@ -325,7 +325,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/startups/41s.png" }
+                   attributes: { url: "/img/startups/40s.png" }
                  }
                }
              }
@@ -337,7 +337,7 @@
                order: 1,
                Image: {
                  data: {
-                   attributes: { url: "/img/startups/42s.png" }
+                   attributes: { url: "" }
                  }
                }
              }
@@ -425,15 +425,26 @@
             {/if}
           </div>
           <div class="flex flex-wrap flex-row gap-2 items-center justify-center">
-            {#each item.attributes.startups.data as Startup (Startup.id)}
-                <a class="rounded-md w-32 md:w-40 md:h-24 bg-white border">
-                  <img
-                    src={Startup.attributes.Image.data.attributes.url}
-                    alt={Startup.attributes.Label}
-                    class="w-full h-full rounded-md mb-2 p-2"
-                  />
-                </a>
-            {/each}
+           {#each item.attributes.startups.data as Startup (Startup.id)}
+            {#if Startup.attributes.Image?.data?.attributes?.url}
+              <!-- Show image when URL is present -->
+              <a class="rounded-md w-32 md:w-40 md:h-24 bg-white border flex items-center justify-center">
+                <img
+                  src={Startup.attributes.Image.data.attributes.url}
+                  alt={Startup.attributes.Label}
+                  class="w-full h-full rounded-md mb-2 p-2 object-contain"
+                />
+              </a>
+            {:else}
+              <!-- Show uppercase label with border when URL is missing -->
+              <div class="rounded-md w-32 md:w-40 md:h-24 bg-gray-100 border flex items-center justify-center">
+                <span class="text-xs md:text-sm font-bold uppercase text-gray-700 p-2 text-center">
+                  {Startup.attributes.Label}
+                </span>
+              </div>
+            {/if}
+          {/each}
+
           </div>
         </div>
       {/if}
