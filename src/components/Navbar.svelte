@@ -116,7 +116,7 @@
 
           {#if dropdownOpen}
             <ul
-              class="absolute right-0  top-10 mt-2 w-56 rounded-md border border-gray-100 bg-white shadow-lg focus:outline-none"
+              class="absolute   top-10 mt-2 w-56 rounded-md border border-gray-100 bg-white shadow-lg focus:outline-none"
               role="menu"
               tabindex="-1"
             >
