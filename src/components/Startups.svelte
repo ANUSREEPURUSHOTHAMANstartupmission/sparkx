@@ -122,6 +122,19 @@
                  }
                }
              }
+           },
+             {
+             id: 10,
+             attributes: {
+               Label: "Startup B",
+               Websitelink: "",
+               order: 2,
+               Image: {
+                 data: {
+                   attributes: { url: "/img/startups/45.png" }
+                 }
+               }
+             }
            }
          ]
        }
