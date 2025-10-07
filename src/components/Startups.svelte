@@ -326,9 +326,43 @@
      }
    },
     {
+     id: 7,
+     attributes: {
+       Type: "Electronics & Communication",
+       startups: {
+         data: [
+           {
+             id: 24,
+             attributes: {
+               Label: "Indimus Innovative LLP",
+               order: 1,
+               Image: {
+                 data: {
+                   attributes: { url: "/img/startups/24s.png" }
+                 }
+               }
+             }
+           },
+           {
+             id: 25,
+             attributes: {
+               Label: "The Trudot Cosmetics",
+               order: 1,
+               Image: {
+                 data: {
+                   attributes: { url: "/img/startups/25s.png" }
+                 }
+               }
+             }
+           },
+         ]
+       }
+     }
+   },
+    {
      id: 6,
      attributes: {
-       Type: "Consumer/emerging sectors",
+       Type: "Consumer/Emerging sectors",
        startups: {
          data: [
            {
@@ -366,45 +400,36 @@
                  }
                }
              }
+           },
+            {
+             id: 46,
+             attributes: {
+               Label: "Startup C",
+               order: 1,
+               Image: {
+                 data: {
+                   attributes: { url: "/img/startups/46.png" }
+                 }
+               }
+             }
+           },
+            {
+             id: 47,
+             attributes: {
+               Label: "Startup C",
+               order: 1,
+               Image: {
+                 data: {
+                   attributes: { url: "/img/startups/47.png" }
+                 }
+               }
+             }
            }
          ]
        }
      }
-   },
-    {
-     id: 7,
-     attributes: {
-       Type: "Electronics & Communication",
-       startups: {
-         data: [
-           {
-             id: 24,
-             attributes: {
-               Label: "Indimus Innovative LLP",
-               order: 1,
-               Image: {
-                 data: {
-                   attributes: { url: "/img/startups/24s.png" }
-                 }
-               }
-             }
-           },
-           {
-             id: 25,
-             attributes: {
-               Label: "The Trudot Cosmetics",
-               order: 1,
-               Image: {
-                 data: {
-                   attributes: { url: "/img/startups/25s.png" }
-                 }
-               }
-             }
-           },
-         ]
-       }
-     }
    }
+   
  ];
 
   // sort by startupship type order if you have `attributes.order`
